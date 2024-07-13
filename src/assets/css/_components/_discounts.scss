@@ -1,0 +1,187 @@
+section.discounts {
+  height: 550px;
+  background-color: #03a9f3;
+  background-image: url("../../../assets/img/04-bg.png");
+  background-position: center left 50%;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  margin-bottom: 600px;
+
+  h3 {
+    color: #ffffff;
+  }
+
+  p {
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 50px 80px 50px;
+    line-height: 24px;
+  }
+
+  .grid-container {
+    height: 500px;
+    filter: drop-shadow(0px 4px 15px rgba(202, 202, 202, 0.55));
+    display: grid;
+    grid-template-columns: 3fr 3fr 4fr;
+
+    .item1 {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      background: black;
+      border-right: 1px solid #e3e3e9;
+      border-bottom: 1px solid #e3e3e9;
+    }
+    .item2 {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+    .item3 {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    .item4 {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      border-top: 1px solid #e3e3e9;
+      border-left: 1px solid #e3e3e9;
+    }
+    .item5 {
+      grid-column: 3/4;
+      grid-row: 1/3;
+    }
+
+    .grid-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+
+      span {
+        font-size: 35px;
+        line-height: 40px;
+        color: #f75e2e;
+        font-weight: 600;
+        font-family: "Poppins-Bold";
+        text-align: center;
+        margin-bottom: 5px;
+      }
+
+      p {
+        color: #51555a;
+        text-align: center;
+        padding: 0;
+        margin: 5px 0;
+      }
+
+      h6 {
+        font-size: 17px;
+        color: #03a9f4;
+        font-weight: 600;
+        font-family: "Poppins-Bold";
+        text-align: center;
+      }
+    }
+
+    .grid-discountCode {
+      padding: 35px 20px 1px 20px;
+      background: #03a9f3;
+
+      .discount-card {
+        border: 2px dashed #0187c3;
+        border-radius: 6%;
+        padding: 25px 25px 35px 25px;
+
+        h4 {
+          font-size: 25px;
+          letter-spacing: 0px;
+          line-height: 34px;
+          text-transform: uppercase;
+          color: #ffffff;
+          font-weight: 600;
+          font-family: "Poppins-Bold";
+          text-align: center;
+        }
+
+        .getOff-container {
+          background: #0287c3;
+          border: 3px dashed #ffffff;
+          border-radius: 6%;
+          position: relative;
+          margin-top: 35px;
+          margin-bottom: 70px;
+          padding: 20px;
+
+          span:first-child {
+            font-size: 24px;
+            letter-spacing: 0px;
+            line-height: 40px;
+            color: #ffffff;
+            font-weight: 500;
+            font-family: "Poppins-Medium";
+            text-align: center;
+            display: block;
+            transform: translateX(-19%);
+            margin-bottom: -7px;
+          }
+          span:nth-child(2),
+          span:nth-child(3) {
+            font-size: 62px;
+            line-height: 57px;
+            color: #e2f55d;
+            font-weight: 500;
+            font-family: "Poppins-Medium";
+            text-align: center;
+            display: block;
+            text-transform: uppercase;
+          }
+          span:last-of-type {
+            font-size: 14px;
+            line-height: 22px;
+            color: #ffffff;
+            font-weight: 500;
+            font-family: "Poppins-Medium";
+            text-align: center;
+            display: block;
+            text-align: center;
+          }
+
+          img.scissors {
+            position: absolute;
+            top: -15px;
+            left: -12px;
+          }
+
+          img.stars {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(14px, -15px);
+          }
+        }
+
+        h5 {
+          font-size: 18px;
+          letter-spacing: 0px;
+          line-height: 23px;
+          color: #ffffff;
+          font-weight: 400;
+          font-style: italic;
+          font-family: "Open Sans";
+          text-align: center;
+          transform: translateX(-10px);
+
+          i {
+            font-weight: 600;
+          }
+        }
+
+        img.balloon {
+          position: absolute;
+          bottom: -10px;
+          right: -34px;
+        }
+      }
+    }
+  }
+}
