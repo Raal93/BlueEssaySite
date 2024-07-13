@@ -1,0 +1,30 @@
+.welcome {
+  background-color: #ffffff;
+
+  ._container {
+    padding: 90px 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .h2-flexContainer {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 35px;
+    color: #1e2021;
+    font-weight: 600;
+    font-family: "Poppins-Bold";
+  }
+
+  p {
+    margin-top: 15px;
+    word-spacing: 4px;
+  }
+}
