@@ -1,0 +1,52 @@
+section.howItWorks {
+  background-color: #ffffff;
+  padding: 90px 0;
+
+  h3 {
+    color: #323538;
+    margin-bottom: 45px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    padding: 0 30px;
+    position: relative;
+    height: 260px;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 180px;
+      width: 16px;
+      background-image: url(../../../assets/img/arrow_ourSimple.png);
+      position: absolute;
+      top: calc(50% - 90px);
+      left: 100%;
+    }
+
+    span {
+      font-size: 17px;
+      text-transform: uppercase;
+      color: #323538;
+      font-weight: 600;
+      font-family: "Poppins-Bold";
+      text-align: center;
+      margin: 25px 0 15px 0;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      color: #51555a;
+      text-align: center;
+    }
+  }
+
+  .card.last::after {
+    display: none;
+  }
+}

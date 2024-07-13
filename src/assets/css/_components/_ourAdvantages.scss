@@ -6,11 +6,7 @@ section.ourAdvantages {
   padding: 80px 0;
 
   h3 {
-    font-size: 33px;
     color: #ffffff;
-    font-weight: 500;
-    font-family: "Poppins-Medium";
-    text-align: center;
   }
 
   .card {
@@ -22,6 +18,7 @@ section.ourAdvantages {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 300px;
 
     img {
       width: 86px;
