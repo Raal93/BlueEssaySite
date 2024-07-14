@@ -28,8 +28,6 @@ section.discounts {
       grid-column: 1/2;
       grid-row: 1/2;
       background: black;
-      border-right: 1px solid #e3e3e9;
-      border-bottom: 1px solid #e3e3e9;
     }
     .item2 {
       grid-column: 2/3;
@@ -42,8 +40,6 @@ section.discounts {
     .item4 {
       grid-column: 2/3;
       grid-row: 2/3;
-      border-top: 1px solid #e3e3e9;
-      border-left: 1px solid #e3e3e9;
     }
     .item5 {
       grid-column: 3/4;
@@ -56,6 +52,7 @@ section.discounts {
       justify-content: center;
       align-items: center;
       background-color: #ffffff;
+      border: 0.5px solid #e3e3e9;
 
       span {
         font-size: 35px;
@@ -84,7 +81,7 @@ section.discounts {
     }
 
     .grid-discountCode {
-      padding: 35px 20px 1px 20px;
+      padding: 15px 20px;
       background: #03a9f3;
 
       .discount-card {
@@ -178,7 +175,7 @@ section.discounts {
 
         img.balloon {
           position: absolute;
-          bottom: -10px;
+          bottom: 12px;
           right: -34px;
         }
       }
