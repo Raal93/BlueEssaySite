@@ -1,0 +1,151 @@
+footer {
+  background-color: #03a9f3;
+  border: 1px solid #e0ebf2;
+  padding: 15px 0 40px 0;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin: 0 20px;
+
+      a {
+        font-weight: 500;
+        font-family: "Poppins-Medium";
+        letter-spacing: 0.4px;
+        word-spacing: 2px;
+      }
+    }
+  }
+
+  ._section-wrapper {
+    margin: 30px 0 40px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 45px 60px 45px 0;
+
+    h6 {
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: 500;
+      font-family: "Poppins-Medium";
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 30px;
+      color: #ffffff;
+      font-weight: 400;
+      font-family: "Poppins-Regular";
+    }
+  }
+
+  .bottom-copyright {
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+    }
+  }
+
+  .bottom-socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+
+    div {
+      height: 35px;
+      width: 35px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .facebook {
+      background-image: url("../../../assets/img/facebook.png");
+
+      &:hover {
+        background-image: url("../../../assets/img/facebook-hover.png");
+      }
+    }
+
+    .twitter {
+      background-image: url("../../../assets/img/twitter.png");
+
+      &:hover {
+        background-image: url("../../../assets/img/twitter-hover.png");
+      }
+    }
+
+    .pinterest {
+      background-image: url("../../../assets/img/pinterest.png");
+
+      &:hover {
+        background-image: url("../../../assets/img/pinterest-hover.png");
+      }
+    }
+
+    .googlePlus {
+      background-image: url("../../../assets/img/google-plus.png");
+
+      &:hover {
+        background-image: url("../../../assets/img/google-plus-hover.png");
+      }
+    }
+  }
+
+  .bottom-phone {
+    padding-left: 30px;
+
+    img {
+      float: left;
+      margin-right: 15px;
+      margin-top: 8px;
+    }
+
+    .intro {
+      display: block;
+      font-size: 14px;
+      color: #ffffff;
+      font-weight: 400;
+      font-family: "Poppins-Regular";
+    }
+
+    .contact {
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: 600;
+      font-family: "Poppins-Bold";
+    }
+  }
+
+  .bottom-email {
+    padding-left: 40px;
+
+    img {
+      float: left;
+      margin-right: 15px;
+      margin-top: 8px;
+    }
+
+    .intro {
+      display: block;
+      font-size: 14px;
+      color: #ffffff;
+      font-weight: 400;
+      font-family: "Poppins-Regular";
+    }
+
+    .contact {
+      font-size: 15px;
+      color: #ffffff;
+      font-weight: 500;
+      font-family: "Poppins-Medium";
+    }
+  }
+}
