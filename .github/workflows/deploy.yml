@@ -1,20 +1,28 @@
-name: Deploy to GitHub Pages
+name: NodeJS with Gulp
 
 on:
   push:
-    branches:
-      - main # lub inny główny branch, z którego chcesz deployować
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
         with:
-          branch: gh-pages # Branch, na którym będą hostowane pliki
-          folder: dist # Folder, z którego mają być wzięte pliki do deploymentu
+          node-version: ${{ matrix.node-version }}
+
+      - name: Build
+        run: |
+          npm install
+          gulp
