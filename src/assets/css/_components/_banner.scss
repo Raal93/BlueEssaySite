@@ -1,7 +1,7 @@
 section.banner {
   // height: 630px;
 
-  background-image: url("../../../assets/img/img-cloud.png");
+  background-image: url("./../../assets/img/img-cloud.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-color: #e6f7fe;
@@ -73,4 +73,48 @@ section.banner {
       margin: 0;
     }
   }
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 991px) {
+  section.banner {
+    position: relative;
+
+    button {
+      margin-bottom: 0;
+    }
+
+    ._form {
+      height: 280px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      transform: none;
+      position: absolute;
+      top: 75%;
+
+      label {
+        margin-top: 15px;
+      }
+
+      button {
+        width: 80%;
+        margin-top: 20px;
+      }
+    }
+
+    .girl {
+      transform: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 575px) {
+}
+
+@media screen and (max-width: 376px) {
 }
