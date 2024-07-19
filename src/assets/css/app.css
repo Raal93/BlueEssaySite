@@ -402,28 +402,59 @@ section.banner ._form button {
   background-color: #ffffff;
 }
 .welcome ._container {
-  padding: 90px 0;
+  padding: 130px 0 90px 0;
 }
-.welcome img {
-  width: 100%;
-  height: auto;
-}
-.welcome .h2-flexContainer {
-  flex-grow: 1;
+.welcome ._container .text-wrap {
+  height: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
-.welcome h2 {
+.welcome ._container img {
+  width: 50%;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+}
+.welcome ._container h2 {
   font-size: 35px;
   color: #1e2021;
   font-weight: 600;
   font-family: "Poppins-Bold";
 }
-.welcome p {
+.welcome ._container p {
   margin-top: 15px;
   word-spacing: 4px;
 }
 
+@media screen and (max-width: 1400px) {
+  .welcome ._container .text-wrap {
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .welcome ._container .text-wrap {
+    display: block;
+  }
+}
+@media screen and (max-width: 991px) {
+  .welcome ._container {
+    padding-top: 200px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .welcome ._container {
+    padding-top: 90px;
+  }
+  .welcome ._container img {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .welcome ._container h2 {
+    text-align: center;
+    font-size: 28px;
+  }
+}
 section.ourAdvantages {
   background-image: url("./../../assets/img/icons_transparent.png");
   background-repeat: no-repeat;
