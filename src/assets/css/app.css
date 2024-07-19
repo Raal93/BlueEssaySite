@@ -301,8 +301,11 @@ section.banner ._form button {
 }
 
 @media screen and (max-width: 991px) {
-  section.banner {
-    position: relative;
+  section.banner h1,
+  section.banner .indicator,
+  section.banner p,
+  section.banner button {
+    transform: translateY(50px);
   }
   section.banner button {
     margin-bottom: 0;
@@ -310,10 +313,7 @@ section.banner ._form button {
   section.banner ._form {
     height: 280px;
     padding-bottom: 20px;
-    padding-top: 20px;
-    transform: none;
-    position: absolute;
-    top: 75%;
+    transform: translateY(40%);
   }
   section.banner ._form label {
     margin-top: 15px;
@@ -321,9 +321,81 @@ section.banner ._form button {
   section.banner ._form button {
     width: 80%;
     margin-top: 20px;
+    transform: none;
   }
   section.banner .girl {
     transform: none;
+    height: 300px;
+    width: auto;
+    transform: translate(-90%, 40%);
+  }
+}
+@media screen and (max-width: 767px) {
+  section.banner ._sm_d-none {
+    display: none;
+  }
+  section.banner h1._sm_h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+  section.banner ._sm_indicator {
+    margin: 30px auto 0 auto;
+  }
+  section.banner .girl {
+    transform: translate(-70%, 40%);
+  }
+}
+@media screen and (max-width: 575px) {
+  section.banner {
+    padding-top: 20px;
+  }
+  section.banner h1._sm_h1,
+  section.banner ._sm_indicator,
+  section.banner button,
+  section.banner p,
+  section.banner .girl {
+    margin: 0;
+    padding: 0;
+    transform: none;
+  }
+  section.banner ._margin-left {
+    padding-left: 12px;
+  }
+  section.banner h1._sm_h1 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  section.banner h1._sm_h1 span {
+    font-size: 28px;
+  }
+  section.banner ._sm_indicator {
+    margin: 0 auto 20px auto;
+  }
+  section.banner p {
+    font-size: 14px;
+    line-height: 18px;
+    width: 100%;
+  }
+  section.banner button {
+    margin: 25px auto;
+    display: block;
+  }
+  section.banner .girl {
+    display: block;
+    margin: auto;
+    transform: translateY(8px);
+  }
+  section.banner ._form {
+    height: auto;
+    transform: none;
+  }
+  section.banner ._form label {
+    margin-top: 20px;
+  }
+  section.banner ._form button {
+    margin: 30px auto 10px auto;
   }
 }
 .welcome {

@@ -80,7 +80,12 @@ section.banner {
 
 @media screen and (max-width: 991px) {
   section.banner {
-    position: relative;
+    h1,
+    .indicator,
+    p,
+    button {
+      transform: translateY(50px);
+    }
 
     button {
       margin-bottom: 0;
@@ -89,10 +94,7 @@ section.banner {
     ._form {
       height: 280px;
       padding-bottom: 20px;
-      padding-top: 20px;
-      transform: none;
-      position: absolute;
-      top: 75%;
+      transform: translateY(40%);
 
       label {
         margin-top: 15px;
@@ -101,19 +103,104 @@ section.banner {
       button {
         width: 80%;
         margin-top: 20px;
+        transform: none;
       }
     }
 
     .girl {
       transform: none;
+      height: 300px;
+      width: auto;
+      transform: translate(-90%, 40%);
     }
   }
 }
 
 @media screen and (max-width: 767px) {
+  section.banner {
+    ._sm_d-none {
+      display: none;
+    }
+
+    h1._sm_h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 0;
+      // transform: translateY(30px);
+    }
+
+    ._sm_indicator {
+      margin: 30px auto 0 auto;
+    }
+
+    .girl {
+      transform: translate(-70%, 40%);
+    }
+  }
 }
 
 @media screen and (max-width: 575px) {
+  section.banner {
+    padding-top: 20px;
+
+    h1._sm_h1,
+    ._sm_indicator,
+    button,
+    p,
+    .girl {
+      margin: 0;
+      padding: 0;
+      transform: none;
+    }
+
+    ._margin-left {
+      padding-left: 12px;
+    }
+
+    h1._sm_h1 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 15px;
+
+      span {
+        font-size: 28px;
+      }
+    }
+
+    ._sm_indicator {
+      margin: 0 auto 20px auto;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 18px;
+      width: 100%;
+    }
+
+    button {
+      margin: 25px auto;
+      display: block;
+    }
+
+    .girl {
+      display: block;
+      margin: auto;
+      transform: translateY(8px);
+    }
+
+    ._form {
+      height: auto;
+      transform: none;
+
+      label {
+        margin-top: 20px;
+      }
+
+      button {
+        margin: 30px auto 10px auto;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 376px) {
