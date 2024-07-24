@@ -192,6 +192,11 @@ section.discounts {
   section.discounts {
     height: 700px;
     background-position: bottom left 50%;
+    padding-top: 70px;
+
+    p {
+      padding-bottom: 50px;
+    }
 
     .grid-container {
       min-height: 500px;
@@ -287,6 +292,10 @@ section.discounts {
 
 @media screen and (max-width: 440px) {
   section.discounts {
+    p {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
     .grid-container {
       .grid-discountCode {
         .discount-card {
