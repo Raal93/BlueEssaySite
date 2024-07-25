@@ -265,6 +265,8 @@ section.discounts {
 
 @media screen and (max-width: 575px) {
   section.discounts {
+    height: auto;
+    padding-bottom: 90px;
     .grid-container {
       .grid-discountCode {
         .discount-card {
