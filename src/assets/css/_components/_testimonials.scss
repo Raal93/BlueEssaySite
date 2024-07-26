@@ -8,23 +8,23 @@ section.testimonials {
 
     &:hover {
       background: #fafafa;
+      border-radius: 15%;
     }
   }
 
   .carousel-control-next-icon {
-    background-image: url("../../../assets/img/arrow-right.png");
+    background-image: url("./../../assets/img/arrow-right.png");
     width: 32px;
     height: 64px;
   }
 
   .carousel-control-prev-icon {
-    background-image: url("../../../assets/img/arrow.png");
+    background-image: url("./../../assets/img/arrow.png");
     width: 32px;
     height: 64px;
   }
 
   ._carousel-card {
-    // width: 636px;
     display: flex;
     flex-direction: column;
     justify-content: center;

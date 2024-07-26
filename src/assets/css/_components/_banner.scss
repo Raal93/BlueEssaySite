@@ -1,6 +1,4 @@
 section.banner {
-  // height: 630px;
-
   background-image: url("./../../assets/img/img-cloud.png");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -107,11 +105,16 @@ section.banner {
       }
     }
 
+    ._position-md-relative {
+      position: relative;
+    }
     .girl {
       transform: none;
+      position: absolute;
       height: 300px;
       width: auto;
-      transform: translate(-90%, 40%);
+      left: -120px;
+      top: -178px;
     }
   }
 }
@@ -126,15 +129,20 @@ section.banner {
       text-align: center;
       font-size: 32px;
       margin-bottom: 0;
-      // transform: translateY(30px);
     }
 
     ._sm_indicator {
-      margin: 30px auto 0 auto;
+      margin: 30px auto 30px auto;
     }
 
+    ._position-md-relative {
+      position: relative;
+    }
     .girl {
-      transform: translate(-70%, 40%);
+      transform: none;
+      position: absolute;
+      left: -120px;
+      top: -178px;
     }
   }
 }
@@ -142,6 +150,8 @@ section.banner {
 @media screen and (max-width: 575px) {
   section.banner {
     padding-top: 20px;
+    position: relative;
+    z-index: -2;
 
     h1._sm_h1,
     ._sm_indicator,
@@ -183,6 +193,8 @@ section.banner {
     }
 
     .girl {
+      position: static;
+
       display: block;
       margin: auto;
       transform: translateY(8px);
@@ -191,6 +203,9 @@ section.banner {
     ._form {
       height: auto;
       transform: none;
+
+      position: relative;
+      z-index: -1;
 
       label {
         margin-top: 20px;
