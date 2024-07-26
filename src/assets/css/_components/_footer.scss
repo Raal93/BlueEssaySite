@@ -142,10 +142,158 @@ footer {
     }
 
     .contact {
-      font-size: 15px;
+      font-size: 14px;
       color: #ffffff;
       font-weight: 500;
       font-family: "Poppins-Medium";
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  footer {
+    ._section-wrapper {
+      padding-right: 0;
+    }
+
+    .bottom-phone,
+    .bottom-email {
+      text-align: center;
+
+      img {
+        float: none;
+        margin: 0 2px 0 0;
+        display: inline-block;
+      }
+
+      .intro {
+        display: inline-block;
+      }
+
+      .contact {
+        margin-top: 5px;
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  footer {
+    ul {
+      text-align: center;
+      li {
+        margin: 10px 20px;
+      }
+    }
+    img {
+      transform: translateY(20px);
+    }
+
+    .bottom-copyright,
+    .bottom-socials {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .bottom-copyright {
+      p {
+        line-height: 26px;
+      }
+    }
+
+    .bottom-phone,
+    .bottom-email {
+      padding-left: 0;
+      margin-top: 40px;
+
+      img {
+        float: none;
+        margin: 0;
+        transform: none;
+      }
+
+      .intro {
+        display: inline-block;
+      }
+    }
+
+    // .bottom-email {
+    //   padding-left: 40px;
+
+    //   img {
+    //     float: left;
+    //     margin-right: 15px;
+    //     margin-top: 8px;
+    //   }
+
+    //   .intro {
+    //     display: block;
+    //     font-size: 14px;
+    //     color: #ffffff;
+    //     font-weight: 400;
+    //     font-family: "Poppins-Regular";
+    //   }
+
+    //   .contact {
+    //     font-size: 14px;
+    //     color: #ffffff;
+    //     font-weight: 500;
+    //     font-family: "Poppins-Medium";
+    //   }
+    // }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    ul {
+      text-align: center;
+      li {
+        margin: 10px 15px;
+      }
+    }
+
+    ._section-wrapper {
+      h6 {
+        margin-bottom: 10px;
+      }
+
+      ._section3 {
+        margin-top: 40px;
+
+        h6 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  footer {
+    ul {
+      margin-top: 40px;
+      li {
+        margin: 10px 10px;
+      }
+    }
+
+    ._section-wrapper {
+      div:nth-child(2),
+      div:nth-child(3) {
+        margin-top: 20px;
+      }
+      h6 {
+        text-align: center;
+        margin-bottom: 5px;
+      }
+    }
+
+    .bottom-socials {
+      margin-top: 35px;
     }
   }
 }
