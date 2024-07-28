@@ -66,6 +66,45 @@ section.banner {
     padding-bottom: 33px;
     transform: translateY(40%);
 
+    ._input-container {
+      margin-bottom: 0;
+
+      input {
+        width: 34%;
+        border-radius: 0;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        transform: none;
+        box-sizing: border-box;
+      }
+
+      input[type="number"]::-webkit-outer-spin-button,
+      input[type="number"]::-webkit-inner-spin-button {
+        display: none;
+      }
+
+      button {
+        color: #656a70;
+        font-size: 24px;
+        width: 33%;
+        margin: 0;
+        padding: 0;
+        transform: none;
+        box-sizing: border-box;
+      }
+
+      .increase {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      .decrease {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+
     button {
       width: 100%;
       margin: 0;
@@ -150,8 +189,6 @@ section.banner {
 @media screen and (max-width: 575px) {
   section.banner {
     padding-top: 20px;
-    position: relative;
-    z-index: -2;
 
     h1._sm_h1,
     ._sm_indicator,
@@ -192,20 +229,21 @@ section.banner {
       display: block;
     }
 
-    .girl {
-      position: static;
+    .girl-container {
+      height: 300px;
+      .girl {
+        top: 0;
+        left: calc(50% - 99px);
 
-      display: block;
-      margin: auto;
-      transform: translateY(8px);
+        display: block;
+        margin: auto;
+        transform: translateY(8px);
+      }
     }
 
     ._form {
       height: auto;
       transform: none;
-
-      position: relative;
-      z-index: -1;
 
       label {
         margin-top: 20px;

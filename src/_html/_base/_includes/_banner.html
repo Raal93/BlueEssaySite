@@ -19,27 +19,53 @@
           <button class="d_color2">place in order</button>
         </div>
         <div class="col-12 col-sm-2 col-md-2 col-lg-4 _position-md-relative">
-          <img class="girl" src="./assets/img/girl.png" alt="girl with a notebook" />
+          <div class="girl-container">
+            <img class="girl" src="./assets/img/girl.png" alt="girl with a notebook" />
+          </div>
         </div>
-        <div class="col-12 d-flex align-items-end _form">
-          <div class="row g-0 d-flex flex-row justify-content-around align-items-end">
-            <div class="col-10 col-sm-5 col-lg-2">
+        <div class="col-12 d-flex align-items-end justify-content-center _form">
+          <div class="row g-0 w-100 d-flex flex-row justify-content-around align-items-end">
+            <div class="col-10 col-sm-5 col-lg-2 p-0">
               <label for="paperType">Type of paper</label>
-              <input type="text" placeholder="White A4" id="paperType" />
+              <select id="paperType" class="form-select" aria-label="Default select example">
+                <option selected value="plain">Plain Paper</option>
+                <option value="bond">Bond Paper</option>
+                <option value="glossy">Glossy Paper</option>
+                <option value="color">Color Paper</option>
+              </select>
             </div>
-            <div class="col-10 col-sm-5 col-lg-2">
+            <div class="col-10 col-sm-5 col-lg-2 p-0">
               <label for="writerLvl">Writer level</label>
-              <input type="text" placeholder="High school" id="writerLvl" />
+              <select id="writerLvl" class="form-select" aria-label="Default select example">
+                <option selected value="high">High School</option>
+                <option value="middle">Middle School</option>
+                <option value="academic">Academic</option>
+              </select>
             </div>
-            <div class="col-10 col-sm-5 col-lg-2">
+            <div class="col-10 col-sm-5 col-lg-2 p-0">
               <label for="urgency">Urgency</label>
-              <input type="text" placeholder="21 days" id="urgency" />
+              <select id="urgency" class="form-select" aria-label="Default select example">
+                <option value="3">3 days</option>
+                <option value="5">5 days</option>
+                <option value="7">7 days</option>
+                <option value="14">14 days</option>
+                <option selected value="21">21 days</option>
+                <option value="28">28 days</option>
+                <option value="60">2 months</option>
+                <option value="120">4 months</option>
+                <option value="180">6 months</option>
+                <option value="365">1 year</option>
+              </select>
             </div>
-            <div class="col-10 col-sm-5 col-lg-2">
+            <div class="col-10 col-sm-5 col-lg-2 p-0">
               <label for="pagesNum">Number of pages</label>
-              <input type="number" placeholder="2" id="pagesNum" />
+              <div class="input-group _input-container">
+                <button class="increase">-</button>
+                <input type="number" placeholder="2" id="pagesNum" />
+                <button class="decrease">+</button>
+              </div>
             </div>
-            <div class="col-10 col-sm-5 col-lg-2 d-flex justify-content-center">
+            <div class="col-10 col-sm-5 col-lg-2 p-0 d-flex justify-content-center">
               <button class="d_color1">Continue</button>
             </div>
           </div>
